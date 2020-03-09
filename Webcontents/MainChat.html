@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat App</title>
+    
+    
+     </head>
+  <body>
+  <ul id="chat_page">
+
+    <li id="chat_list" style="display: none;">
+      <link rel="stylesheet" href="mystyle.css">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="mainroom" href="./MainChat.html">Main room</a>
+      <a id="" href="./specificRoom.html">Specific room</a>
+      
+      <a id="chatHist" href="./chatHistory.html">Chat History</a>
+      <a id="roomHist" href="./roomHist.html">Room Chat History</a>
+      <a id="eventLog" href="./eventLogHist.html">Events Logs</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;color:#2575fc" onclick="openNav()">&#9776; Menu</span>
+
+<h4 id="info" style="text-align:center"> </h4>
+
+<div class="container content">
+      <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">Chat Application </div>
+              <div class="card-body height3">
+               
+
+
+                  </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+           
+          </div>
+      </div>
+  </div>
+
+   
+  <ul id="messages" class="chat-list"></ul>
+
+
+
+
+  
+  
+
+
+
+  <form id="form2" action="">
+    <input id="inputM" autocomplete="off" /> <button id="button2">Send</button>
+  </form>
+
+
+    </li>
+
+<li id="chat_login">
+  <link rel="stylesheet" href="mystylelogin.css">
+
+  <div id="imageDiv" class="chat-img">  <img id="ima" class="login100-form-logo" alt="Avtar" src="assets/kakashi.jpg"> </div>
+
+	
+
+
+  <div id="div1" class="limiter">
+  <div id="div2" class="container-login100">
+    <div id="div3" class="wrap-login100">
+      <form id="form1" action="" class="login100-form validate-form">
+        
+
+        <span class="login100-form-title p-b-34 p-t-27">
+           Chat
+        </span>
+
+        <div id="divUser" class="wrap-input100 validate-input" data-validate = "Enter username">
+          <input id="username" class="input100" type="text" name="username" placeholder="Username"  required>
+          <span class="focus-input100" ></span>
+        </div>
+
+        <div id="divOption" class="wrap-input100 validate-input" >
+          <select id="select1" class="input100" style="background:black" >
+            <option value="" >Please select an image</option>
+            <option value="morpheus" >Morpheus</option>
+                          <option value="tonystark">Tonystark</option>
+            <option value="ninja">Ninja</option>
+            <option value="afrowoman">Afrowoman</option>
+            <option value="wonderwoman">Wonderwoman</option>
+
+
+
+          </select>
+          <span class="focus-input100" ></span>
+        
+            </div>
+
+        
+
+        <div id="divBut" class="container-login100-form-btn">
+          <button id="btnJoin" class="login100-form-btn">
+            Join Chat
+          </button>
+        </div>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</li>
+</ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="sidebar.js"></script>
+   <script src="logicChat.js"></script>
+
+
+</body>
+</html>

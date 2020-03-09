@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat App</title>
+    
+    
+     </head>
+  <body>
+  
+
+    
+      <link rel="stylesheet" href="mystyle.css">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="mainroom" href="./MainChat.html">Main room</a>
+      <a id="" href="./specificRoom.html">Specific room</a>
+     <a id="chatHist" href="./chatHistory.html">Chat History</a>
+      <a id="roomHist" href="./roomHist.html">Room Chat History</a>
+      <a id="eventLog" href="./eventLogHist.html">Events Logs</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;color:#2575fc" onclick="openNav()">&#9776; Menu</span>
+
+<h4 id="info" style="text-align:center"> </h4>
+
+<div class="container content">
+      <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">Chat Application </div>
+              <div class="card-body height3">
+               
+
+
+                  </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+           
+          </div>
+      </div>
+  </div>
+  <h2>Check url: /api/eventlog</h2>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="sidebar.js"></script>
+   
+
+
+</body>
+</html>

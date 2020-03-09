@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat App</title>
+    
+    
+     </head>
+  <body>
+  <ul id="chat_page">
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a id="mainroom" href="./MainChat.html">Main room</a>
+      <a href="./specificRoom.html">Specific room</a>
+      
+      <a id="chatHist" href="./chatHistory.html">Chat History</a>
+      <a id="roomHist" href="./roomHist.html">Room Chat History</a>
+      <a id="eventLog" href="./eventLogHist.html">Events Logs</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;color:#2575fc" onclick="openNav()">&#9776; Menu</span>
+
+    <li id="chat_list" style="display: none;">
+      <link rel="stylesheet" href="mystyle.css">
+   
+<h4 id="info" style="text-align:center"> </h4>
+
+<div class="container content">
+      <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">Chat Application </div>
+              <div class="card-body height3">
+               
+
+
+                  </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+           
+          </div>
+      </div>
+  </div>
+   <button id="btnLeave"   class="login100-form-btn">
+    LEAVE ROOM </button>
+  
+  
+  <ul id="messages" class="chat-list"></ul>
+
+
+
+  <form id="form2" action="">
+    <input id="inputM" autocomplete="off" /> <button id="button2">Send</button>
+  </form>
+
+
+    </li>
+
+<li id="chat_login">
+  <link rel="stylesheet" href="mystylelogin.css">
+
+  <h4 style="text-align:center">Choose a Room to join.</h4> 
+
+      <br> <br> <br> <br>   <div id="divBut" class="container-login100-form-btn">
+          
+        <form id="form1" action="" class="login100-form validate-form">
+       
+          <span class="login100-form-title p-b-34 p-t-27">
+           Room Chat
+         </span>
+ 
+         <div id="divUser" class="wrap-input100 validate-input" data-validate = "Enter username">
+           <input id="username" class="input100" type="text" name="username" placeholder="Username"  required>
+           <span class="focus-input100" ></span>
+         </div>
+        </form>
+        <button id="btnGold" value="Golden" onclick="click1()" class="login100-form-btn">
+            GOLDEN ROOM </button>
+          
+          <button id="btnNinja" value="Ninja" onclick="click2()" class="login100-form-btn">
+            NINJA ROOM
+          </button>
+      
+      
+      
+        
+        </div>
+
+      
+
+</li>
+</ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="sidebar.js"></script>
+   <script src="logicSpecificRoom.js"></script>
+
+
+</body>
+</html>
